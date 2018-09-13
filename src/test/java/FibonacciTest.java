@@ -5,8 +5,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FibonacciTest {
-    @Test public void testSomeLibraryMethod() {
-        Fibonacci classUnderTest = new Fibonacci();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test public void fibonacci_given0_returns0() {
+        // arrange
+        Fibonacci fibonacci = new Fibonacci();
+        int number = 0;
+
+        // act
+        int result = fibonacci.calculate(number);
+
+        // assert
+        assertSame(result, 0);
     }
 }
