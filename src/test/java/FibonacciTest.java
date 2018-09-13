@@ -56,4 +56,17 @@ public class FibonacciTest {
         // assert
         assertSame(result, 3);
     }
+
+    @Test 
+    public void fibonacci_given9_returns34() {
+        // arrange
+        Fibonacci fibonacci = new Fibonacci();
+        int number = 9;
+
+        // act
+        int result = fibonacci.calculate(number);
+
+        // assert
+        assertSame(result, 34);
+    }
 }
