@@ -3,6 +3,10 @@
  */
 public class Fibonacci {
     public int calculate(int number) {
-        return 0;
+        if(number == 0) {
+            return 0;
+        } else {
+            return 1;
+        }
     }
 }

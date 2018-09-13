@@ -30,5 +30,4 @@ public class FibonacciTest {
         // assert
         assertSame(result, 1);
     }
-
 }
