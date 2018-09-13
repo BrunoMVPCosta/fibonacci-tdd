@@ -9,6 +9,6 @@ public class Fibonacci {
             return 1;
         }
         
-        return 2;
+        return calculate(number - 1) + calculate(number - 2);
     }
 }
